@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân | Cao Quốc Đạt</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Matrix Background -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navbar -->
+    <div class="tech-grid-bg"></div>
+    <nav class="navbar">
+        <div class="nav-content container">
+            <a href="#" class="logo">CAOQUOCDAT<span class="highlight">:~#</span> cv</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="active"><span class="cmd-prompt">~/</span>giới-thiệu</a></li>
+                <li><a href="#experience"><span class="cmd-prompt">~/</span>kinh-nghiệm</a></li>
+                <li><a href="#expertise"><span class="cmd-prompt">~/</span>chuyên-môn</a></li>
+                <li><a href="#education"><span class="cmd-prompt">~/</span>học-vấn</a></li>
+                <li><a href="#certificates"><span class="cmd-prompt">~/</span>chứng-chỉ</a></li>
+                <li class="lang-switch">
+                    <a href="index.html" class="active">VI</a>
+                    <span>|</span>
+                    <a href="index-en.html">EN</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="about" class="hero section">
+        <div class="container hero-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="close"></span>
+                        <span class="minimize"></span>
+                        <span class="maximize"></span>
+                    </div>
+                    <div class="terminal-title">bash - quocdat@ubuntu:~</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="hero-content">
+                        <span class="greeting"><span class="prompt">quocdat@ubuntu:~$</span> ./hello.sh</span>
+                        <h1 class="name" data-text="Cao Quốc Đạt">Cao Quốc Đạt</h1>
+                        <h2 class="title">&gt; <span class="highlight">Fullstack Developer</span><span
+                                class="cursor">_</span></h2>
+                        <p class="summary">
+                            Fullstack Developer với hơn 3 năm kinh nghiệm phát triển ứng dụng web bằng ReactJS và
+                            NodeJS, tập trung vào hiệu năng, khả năng mở rộng và trải nghiệm người dùng. Có kinh nghiệm
+                            làm việc trong môi trường startup, tham gia xuyên suốt quá trình phát triển sản phẩm từ
+                            thiết kế database, nghiên cứu công nghệ, phát triển hệ thống, triển khai server, thiết lập
+                            CI/CD với GitLab đến demo và trao đổi giải pháp với khách hàng. Tôi luôn chủ động học hỏi,
+                            thích nghi nhanh với công nghệ mới và hướng đến việc xây dựng các sản phẩm chất lượng, mang
+                            lại giá trị thực tế cho người dùng và doanh nghiệp.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#contact" class="btn btn-primary">Liên hệ với tôi</a>
+                            <a href="#" class="btn btn-secondary"><i class="fas fa-download"></i> Tải CV</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-wrapper">
+                            <img src="image/anh-ca-nhan.png" alt="Cao Quốc Đạt - Fullstack Developer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">~/$</span> Thông tin <span class="highlight">liên hệ</span>
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon"><i class="fas fa-calendar-alt"></i></div>
+                    <h3>Ngày sinh</h3>
+                    <p>12/09/2001</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3>Điện thoại</h3>
+                    <p>0354492575</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>datcaodev@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Địa chỉ</h3>
+                    <p>Số 9, Ngõ 155 Phương Canh, Nam Từ Liêm, Hà Nội</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon"><i class="fas fa-share-alt"></i></div>
+                    <h3>Mạng xã hội</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/datcaoquoc" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/?locale=vi_VN" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://zalo.me/0354492575" target="_blank" title="Zalo"><i class="fas fa-comment-dots"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section alt-bg">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">~/$</span> Kinh nghiệm <span class="highlight">làm
+                    việc</span></h2>
+            <div class="timeline">
+                <!-- CODEC -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">05/2023 - 05/2026</div>
+                    <div class="timeline-content card">
+                        <h3>CÔNG TY CỔ PHẦN CÔNG NGHỆ CODEC VIỆT NAM</h3>
+                        <h4>Fullstack Developer</h4>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                1. Hệ thống quản lý nguồn thu RAR-SSC (hocphi.rar-ssc.vn)</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Frontend Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống quản lý và thanh toán học phí
+                                trực tuyến dành cho trường học, hiện đang phục vụ hơn 600 trường và tiếp tục mở rộng quy
+                                mô.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">ReactJS, TypeScript, React Query, Zustand, Ant Design, Firebase,
+                                    Docker, Jenkins, Nginx</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Xây dựng giao diện có khả năng mở rộng bằng ReactJS và Ant Design.</li>
+                                <li>Xây dựng chức năng xác thực JWT và phân quyền RBAC.</li>
+                                <li>Xây dựng và tích hợp module realtime cấu hình trạng thái bảo trì, đồng bộ thông báo
+                                    trực tiếp.</li>
+                                <li>Triển khai ứng dụng bằng Docker trên môi trường Linux.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                2. SME - Admin Advertising planning (planning.adiq.vn)</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Fullstack Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống quản trị tài khoản đăng ký
+                                của SME và nhân viên, hỗ trợ quản lý phân quyền, đăng nhập SSO và đồng bộ dữ liệu
+                                rating, inventory từ VTV rating.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">ReactJS, NodeJS, ExpressJS, Keycloak, PostgreSQL, TypeORM, Redis,
+                                    BullMQ, Docker</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Cài đặt và tích hợp Keycloak cho xác thực, phân quyền RBAC và đăng nhập SSO.</li>
+                                <li>Tùy chỉnh giao diện đăng nhập SSO Keycloak.</li>
+                                <li>Phát triển service cron job đồng bộ dữ liệu rating và inventory từ VTV rating dùng
+                                    Worker, BullMQ và Redis.</li>
+                                <li>Tham gia xây dựng giao diện và ghép nối API trang quản trị bằng ReactJS.</li>
+                                <li>Sử dụng Konga để quản lý API Gateway/service liên quan.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                3. Codec Ad SDK (Instream/Outstream)</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Frontend Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Bộ SDK quảng cáo hỗ trợ tích hợp quảng
+                                cáo video Instream và Outstream cho website, hỗ trợ VAST/VMAP/VPAID và tối ưu hiển thị
+                                đa nền tảng.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">TypeScript, Google IMA SDK, Rollup, HTML5 Video API, Docker,
+                                    CDN</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Tham gia phát triển SDK quảng cáo video dựa trên Google IMA.</li>
+                                <li>Xây dựng luồng xử lý quảng cáo Instream cho HTML5 Video Player.</li>
+                                <li>Phát triển các tính năng tracking impression, analytics và metadata thiết bị.</li>
+                                <li>Tối ưu khả năng hiển thị quảng cáo trên Mobile, Tablet và Desktop.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                4. Sim du lịch quốc tế (simdulichquocte.vn)</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Fullstack Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống Backend quản lý và đồng bộ dữ
+                                liệu từ đối tác cung cấp sim, quản lý tài khoản, sản phẩm, tỉ giá, gói cước và bảng giá
+                                đại lý.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">ReactJS, NextJS, TypeScript, NodeJS, ExpressJS, PostgreSQL,
+                                    TypeORM, Cloudinary</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Xây dựng các chức năng xác thực, phân quyền RBAC.</li>
+                                <li>Tích hợp Cloudinary để lưu trữ hình ảnh.</li>
+                                <li>Thiết kế PostgreSQL Materialized View nhằm tối ưu hiệu năng truy vấn dữ liệu bảng
+                                    giá, gói cước.</li>
+                                <li>Tham gia ghép nối API giao diện quản trị và website.</li>
+                                <li>Phân tích yêu cầu và đề xuất giải pháp tối ưu quy trình đồng bộ dữ liệu với đối tác.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                5. Hệ thống quản lý tài khoản ADS Admin</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Fullstack Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">ADS Admin là hệ thống quản trị tài khoản, quản lý các tài khoản DSP, nhân viên, kiểm duyệt campaign và điều hướng campaign đến hệ thống SSP.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">ReactJS, NodeJS, ExpressJS, Keycloak, PostgreSQL, TypeORM, Redis, Docker, Nginx</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Cài đặt và tích hợp Keycloak cho các chức năng xác thực, phân quyền RBAC và đăng nhập SSO.</li>
+                                <li>Tùy chỉnh giao diện đăng nhập SSO Keycloak.</li>
+                                <li>Xây dựng chức năng xác thực OTP, gửi thông báo qua email sử dụng Redis.</li>
+                                <li>Triển khai ứng dụng Docker trên môi trường Ubuntu Linux với Nginx reverse proxy.</li>
+                                <li>Tham gia xây dựng giao diện và kết nối API trang quản trị.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                6. Hệ thống AD Server</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Backend Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống xử lý yêu cầu lấy quảng cáo, lấy dữ liệu từ Redis, tạo file VAST/VMAP.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">TypeScript, NodeJS, ExpressJS, Redis, Docker, Nginx</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Kết nối với Redis và SSP, DSP để xử lý yêu cầu và lấy dữ liệu quảng cáo.</li>
+                                <li>Xây dựng module tạo file VAST/VMAP.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                7. Hệ thống Tracking & Xử lý Dữ liệu</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Backend Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống tiếp nhận dữ liệu tracking quảng cáo dạng raw log, xử lý, làm sạch và tổng hợp dữ liệu phục vụ phân tích và báo cáo.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">Docker, GitLab CI/CD, Swagger, Ubuntu Linux, Nginx</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Xây dựng hệ thống cronjob xử lý dữ liệu tracking theo lịch trình.</li>
+                                <li>Thực hiện làm sạch, chuẩn hóa và xử lý dữ liệu tracking từ raw logs.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ASIM GROUP -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">10/2022 - 05/2023</div>
+                    <div class="timeline-content card">
+                        <h3>ASIM GROUP</h3>
+                        <h4>Frontend Developer</h4>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                Website Đài Phát Thanh và Truyền Hình Hà Giang</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Frontend Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Website thông tin điện tử dành cho Đài
+                                Phát Thanh và Truyền Hình Hà Giang.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">ReactJS, TypeScript, Redux, HTML5 & CSS3, hls.js</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Xây dựng giao diện web responsive bằng ReactJS và TypeScript, đảm bảo tương thích
+                                    trên nhiều thiết bị.</li>
+                                <li>Triển khai Redux để quản lý state tập trung và tối ưu luồng dữ liệu.</li>
+                                <li>Tích hợp RESTful API và thực hiện kiểm thử API bằng Postman.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise section">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">~/$</span> Chuyên <span class="highlight">môn</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category card">
+                    <h3>Frontend</h3>
+                    <div class="tech-badges-container">
+                        <span class="tech-badge"><i class="fab fa-react"></i> ReactJS</span>
+                        <span class="tech-badge"><i class="fas fa-project-diagram"></i> Redux</span>
+                        <span class="tech-badge"><i class="fas fa-network-wired"></i> React Query</span>
+                        <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-badge"><i class="fas fa-file-code"></i> TypeScript</span>
+                        <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="tech-badge"><i class="fas fa-wind"></i> Tailwind CSS</span>
+                        <span class="tech-badge"><i class="fas fa-palette"></i> Ant Design</span>
+                    </div>
+                </div>
+                <div class="skill-category card">
+                    <h3>Backend & Database</h3>
+                    <div class="tech-badges-container">
+                        <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-badge"><i class="fas fa-server"></i> Express.js</span>
+                        <span class="tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="tech-badge"><i class="fas fa-cubes"></i> TypeORM</span>
+                        <span class="tech-badge"><i class="fas fa-memory"></i> Redis</span>
+                        <span class="tech-badge"><i class="fas fa-key"></i> Keycloak</span>
+                    </div>
+                </div>
+                <div class="skill-category card">
+                    <h3>DevOps & Tools</h3>
+                    <div class="tech-badges-container">
+                        <span class="tech-badge"><i class="fab fa-linux"></i> Linux Server</span>
+                        <span class="tech-badge"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-badge"><i class="fas fa-layer-group"></i> Docker Compose</span>
+                        <span class="tech-badge"><i class="fab fa-jenkins"></i> Jenkins</span>
+                        <span class="tech-badge"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="tech-badge"><i class="fab fa-gitlab"></i> GitLab</span>
+                        <span class="tech-badge"><i class="fas fa-infinity"></i> CI/CD</span>
+                        <span class="tech-badge"><i class="fas fa-paper-plane"></i> Postman</span>
+                        <span class="tech-badge"><i class="fas fa-database"></i> DBeaver</span>
+                        <span class="tech-badge"><i class="fas fa-file-signature"></i> Swagger</span>
+                        <span class="tech-badge"><i class="fab fa-trello"></i> Trello</span>
+                        <span class="tech-badge"><i class="fab fa-jira"></i> Jira</span>
+                        <span class="tech-badge"><i class="fas fa-terminal"></i> Tabby</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certificates Section -->
+    <section id="education" class="education-certificates section alt-bg">
+        <div class="container">
+            <div class="grid-2-cols">
+                <!-- Education -->
+                <div>
+                    <h2 class="section-title"><span class="prompt">~/$</span> Học <span class="highlight">vấn</span>
+                    </h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2020 - 2022</div>
+                            <div class="timeline-content card">
+                                <h3>Trường Cao đẳng FPT (FPT Polytechnic)</h3>
+                                <h4>Lập trình máy tính</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificates -->
+                <div id="certificates">
+                    <h2 class="section-title"><span class="prompt">~/$</span> Chứng <span class="highlight">chỉ</span>
+                    </h2>
+                    <div class="certificates-list">
+                        <div class="certificate-card card">
+                            <div class="cert-icon"><i class="fas fa-language"></i></div>
+                            <div class="cert-info">
+                                <h3>ACADEMIC PREPARATORY ENGLISH Level 3 - Topnotch 2</h3>
+                                <span>Đạt được: 2022</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Cao Quốc Đạt. Bản quyền thuộc về tác giả.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
