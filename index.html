@@ -116,9 +116,12 @@
                     <div class="icon"><i class="fas fa-share-alt"></i></div>
                     <h3>Mạng xã hội</h3>
                     <div class="social-links">
-                        <a href="https://github.com/datcaoquoc" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.facebook.com/?locale=vi_VN" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="https://zalo.me/0354492575" target="_blank" title="Zalo"><i class="fas fa-comment-dots"></i></a>
+                        <a href="https://github.com/datcaoquoc" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/?locale=vi_VN" target="_blank" title="Facebook"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://zalo.me/0354492575" target="_blank" title="Zalo"><i
+                                class="fas fa-comment-dots"></i></a>
                     </div>
                 </div>
             </div>
@@ -172,7 +175,7 @@
                                 của SME và nhân viên, hỗ trợ quản lý phân quyền, đăng nhập SSO và đồng bộ dữ liệu
                                 rating, inventory từ VTV rating.</p>
                             <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
-                                    class="tech-tag">ReactJS, NodeJS, ExpressJS, Keycloak, PostgreSQL, TypeORM, Redis,
+                                    class="tech-tag">ReactJS, NodeJS, Nestjs, Keycloak, PostgreSQL, TypeORM, Redis,
                                     BullMQ, Docker</span></p>
                             <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
                                 <li>Cài đặt và tích hợp Keycloak cho xác thực, phân quyền RBAC và đăng nhập SSO.</li>
@@ -236,15 +239,21 @@
                                 5. Hệ thống quản lý tài khoản ADS Admin</h5>
                             <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
                                     trò:</strong> Fullstack Developer</p>
-                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">ADS Admin là hệ thống quản trị tài khoản, quản lý các tài khoản DSP, nhân viên, kiểm duyệt campaign và điều hướng campaign đến hệ thống SSP.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">ADS Admin là hệ thống quản trị tài
+                                khoản, quản lý các tài khoản DSP, nhân viên, kiểm duyệt campaign và điều hướng campaign
+                                đến hệ thống SSP.</p>
                             <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
-                                    class="tech-tag">ReactJS, NodeJS, ExpressJS, Keycloak, PostgreSQL, TypeORM, Redis, Docker, Nginx</span></p>
+                                    class="tech-tag">ReactJS, NodeJS, Nestjs, Keycloak, PostgreSQL, TypeORM, Redis,
+                                    Docker, Nginx, Kafka</span></p>
                             <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
-                                <li>Cài đặt và tích hợp Keycloak cho các chức năng xác thực, phân quyền RBAC và đăng nhập SSO.</li>
+                                <li>Cài đặt và tích hợp Keycloak cho các chức năng xác thực, phân quyền RBAC và đăng
+                                    nhập SSO.</li>
                                 <li>Tùy chỉnh giao diện đăng nhập SSO Keycloak.</li>
                                 <li>Xây dựng chức năng xác thực OTP, gửi thông báo qua email sử dụng Redis.</li>
-                                <li>Triển khai ứng dụng Docker trên môi trường Ubuntu Linux với Nginx reverse proxy.</li>
+                                <li>Triển khai ứng dụng Docker trên môi trường Ubuntu Linux với Nginx reverse proxy.
+                                </li>
                                 <li>Tham gia xây dựng giao diện và kết nối API trang quản trị.</li>
+                                <li>Sử dụng Kafka send dữ liệu cho DSP VÀ SSP khi có campaign, người dùng mới.</li>
                             </ul>
                         </div>
 
@@ -255,9 +264,11 @@
                                 6. Hệ thống AD Server</h5>
                             <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
                                     trò:</strong> Backend Developer</p>
-                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống xử lý yêu cầu lấy quảng cáo, lấy dữ liệu từ Redis, tạo file VAST/VMAP.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống xử lý yêu cầu lấy quảng cáo,
+                                lấy dữ liệu từ Redis, tạo file VAST/VMAP.</p>
                             <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
-                                    class="tech-tag">TypeScript, NodeJS, ExpressJS, Redis, Docker, Nginx</span></p>
+                                    class="tech-tag">TypeScript, NodeJS, ExpressJS, Redis, Docker, Nginx</span>
+                            </p>
                             <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
                                 <li>Kết nối với Redis và SSP, DSP để xử lý yêu cầu và lấy dữ liệu quảng cáo.</li>
                                 <li>Xây dựng module tạo file VAST/VMAP.</li>
@@ -268,15 +279,42 @@
                             style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
                             <h5
                                 style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
-                                7. Hệ thống Tracking & Xử lý Dữ liệu</h5>
+                                7. Service Tracking & Xử lý Dữ liệu</h5>
                             <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
                                     trò:</strong> Backend Developer</p>
-                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống tiếp nhận dữ liệu tracking quảng cáo dạng raw log, xử lý, làm sạch và tổng hợp dữ liệu phục vụ phân tích và báo cáo.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống tiếp nhận dữ liệu tracking
+                                quảng cáo dạng raw log, xử lý, làm sạch và tổng hợp dữ liệu phục vụ phân tích và báo
+                                cáo.</p>
                             <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
-                                    class="tech-tag">Docker, GitLab CI/CD, Swagger, Ubuntu Linux, Nginx</span></p>
+                                    class="tech-tag">Nodejs, Expressjs, Docker, Kafka, GitLab CI/CD, Swagger, Ubuntu
+                                    Linux, Nginx</span></p>
                             <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Sử dụng Kafka để tiếp nhận, đọc và lưu trữ tạm thời raw log tracking thời gian thực.
+                                </li>
                                 <li>Xây dựng hệ thống cronjob xử lý dữ liệu tracking theo lịch trình.</li>
                                 <li>Thực hiện làm sạch, chuẩn hóa và xử lý dữ liệu tracking từ raw logs.</li>
+                            </ul>
+                        </div>
+
+                        <div
+                            style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 255, 204, 0.1); padding-top: 1.5rem;">
+                            <h5
+                                style="font-family: var(--font-mono); font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--accent-primary);">
+                                8. Service gửi Email tự động qua Message Queue</h5>
+                            <p style="margin-bottom: 0.5rem; color: var(--text-muted); font-size: 0.95rem;"><strong>Vai
+                                    trò:</strong> Backend Developer</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">Hệ thống xử lý gửi email bất đồng bộ,
+                                sử dụng cơ chế hàng đợi để đảm bảo tính sẵn sàng cao, tránh nghẽn luồng xử lý chính của
+                                ứng dụng.</p>
+                            <p style="margin-bottom: 0.5rem; font-size: 0.9rem;"><strong>Tech Stack:</strong> <span
+                                    class="tech-tag">NodeJS, ExpressJS, Kafka, Kafkajs, Nodemailer, Docker</span></p>
+                            <ul style="margin-top: 0.5rem; font-size: 0.95rem;">
+                                <li>Thiết lập hàng đợi tin nhắn (Message Queue) bằng Kafka để quản lý luồng nhiệm vụ gửi
+                                    email bất đồng bộ.</li>
+                                <li>Phát triển Express API Producer tiếp nhận yêu cầu gửi mail, kiểm tra tính hợp lệ và
+                                    đẩy sự kiện vào topic tương ứng.</li>
+                                <li>Xây dựng Kafka Consumer Worker tiêu thụ dữ liệu từ topic, cấu hình gửi email SMTP
+                                    thông qua Nodemailer.</li>
                             </ul>
                         </div>
 
@@ -339,10 +377,13 @@
                     <div class="tech-badges-container">
                         <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js</span>
                         <span class="tech-badge"><i class="fas fa-server"></i> Express.js</span>
+                        <span class="tech-badge"><i class="fas fa-server"></i> NestJS</span>
                         <span class="tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
+                        <span class="tech-badge"><i class="fas fa-database"></i> MongoDB</span>
                         <span class="tech-badge"><i class="fas fa-cubes"></i> TypeORM</span>
                         <span class="tech-badge"><i class="fas fa-memory"></i> Redis</span>
                         <span class="tech-badge"><i class="fas fa-key"></i> Keycloak</span>
+                        <span class="tech-badge"><i class="fas fa-stream"></i> Kafka</span>
                     </div>
                 </div>
                 <div class="skill-category card">
